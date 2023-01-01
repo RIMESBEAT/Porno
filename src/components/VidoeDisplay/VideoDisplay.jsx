@@ -10,27 +10,41 @@ const VideoDisplay = ({
   categories,
 }) => {
   return (
-    <div>
+    <div style={{ position: "reletive" }}>
       {/* <Iframe
         url={embed_code}
         width="100%"
         height="100%"
         id={_id}
         className=""
-        display="block"
-        position="relative"
+
+
         allow="fullscreen"
+        styles={{position: "absolute", top: 0}}
       /> */}
 
       <iframe
-        key={_id}
         title={title}
+        key={_id}
+        style={{
+          display: "block",
+          border: "none",
+          height: "100vh",
+          width: "100vw",
+          float: "left",
+          marginLeft: 0,
+        }}
         src={embed_code}
-        width="100%"
-        height="100%"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
-        sandbox="allow-scripts allow-modal"
-        loading="eager"
+        border="0"
+        width="620"
+        height="465"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        frameborder="0"
+        allowfullscreen="true"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
       ></iframe>
     </div>
   );
