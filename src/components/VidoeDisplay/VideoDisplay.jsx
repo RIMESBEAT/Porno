@@ -11,7 +11,7 @@ const VideoDisplay = ({
 }) => {
   return (
     <div>
-      <Iframe
+      {/* <Iframe
         url={embed_code}
         width="100%"
         height="100%"
@@ -20,7 +20,18 @@ const VideoDisplay = ({
         display="block"
         position="relative"
         allow="fullscreen"
-      />
+      /> */}
+
+      <iframe
+        key={_id}
+        title={title}
+        src={embed_code}
+        width={1000}
+        height={500}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
+        sandbox="allow-scripts allow-modal"
+        loading="eager"
+      ></iframe>
     </div>
   );
 };
