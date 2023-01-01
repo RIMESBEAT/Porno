@@ -14,11 +14,12 @@ const VideoDisplay = ({
       <Iframe
         url={embed_code}
         width="100%"
-        height="500px"
+        height="100%"
         id={_id}
         className=""
         display="block"
         position="relative"
+        allow="fullscreen"
       />
     </div>
   );
