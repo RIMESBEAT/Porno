@@ -64,8 +64,6 @@ const VideoPlayer = ({ searchResult }) => {
             <VideoDisplay {...movieItems} key={id} />
           )}
         </div>
-
-        <div className="adsbox">ads here</div>
       </div>
 
       <div className="movies__grid">{displayVideos}</div>
