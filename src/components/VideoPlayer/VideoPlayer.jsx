@@ -21,7 +21,7 @@ const VideoPlayer = ({ searchResult }) => {
 
   const fetchData = async () => {
     setIsLoading(true);
-    await Axios.get(`http://localhost:4000/api/videos/${id}`)
+    await Axios.get(`https://rimestube-backend.onrender.com/api/videos/${id}`)
       .then((response) => {
         setMovieItems(response.data);
       })

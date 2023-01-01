@@ -22,10 +22,12 @@ function App() {
   }, []);
 
   const fetchData = async () => {
-    await Axios.get(`http://localhost:4000/api/videos`).then((response) => {
-      setMovieItems(response.data);
-      setSearchResult(response.data)
-    });
+    await Axios.get(`https://rimestube-backend.onrender.com/api/videos`).then(
+      (response) => {
+        setMovieItems(response.data);
+        setSearchResult(response.data);
+      }
+    );
   };
 
   console.log(searchResult);
