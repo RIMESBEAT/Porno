@@ -29,7 +29,7 @@ const VideoDisplay = ({
         style={{
           display: "block",
           border: "none",
-          height: "100vh",
+          height: "100%",
           width: "100vw",
           float: "left",
           marginLeft: 0,
